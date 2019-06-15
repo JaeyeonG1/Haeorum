@@ -1,3 +1,5 @@
+//test
+
 // 메인 화면 슬라이드 쇼
 let sliderWrapper = document.getElementById(`sliderWrapper`);
 let sliderIndex = 0;
