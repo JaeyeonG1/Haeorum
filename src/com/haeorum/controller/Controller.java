@@ -14,13 +14,13 @@ import com.haeorum.command.*;
  * Servlet implementation class LoginController
  */
 @WebServlet("*.do")
-public class LoginController extends HttpServlet {
+public class Controller extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
     /**
      * @see HttpServlet#HttpServlet()
      */
-    public LoginController() {
+    public Controller() {
         super();
         // TODO Auto-generated constructor stub
     }
@@ -56,8 +56,10 @@ public class LoginController extends HttpServlet {
 		String conPath = request.getContextPath();
 		String com = uri.substring(conPath.length());
 		
-		if(com.equals("/register.do")) {
-			
+		if(com.equals("/registerForm.do")) {
+			command = new LoginCommand();
+			command.execute(request, response);
+			viewPage = "registerAfter.jsp";
 		}
 		else if(com.equals("/login.do")) {
 			

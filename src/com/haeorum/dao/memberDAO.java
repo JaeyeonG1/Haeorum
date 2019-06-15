@@ -1,8 +1,6 @@
 package com.haeorum.dao;
 
-import javax.naming.Context;
-import javax.naming.InitialContext;
-import javax.naming.NamingException;
+import javax.naming.*;
 import javax.sql.DataSource;
 import com.haeorum.dto.*;
 
@@ -20,6 +18,10 @@ public class memberDAO {
 	}
 	
 	public void registerMember(memberDTO member) {
+		
+	}
+	
+	public void inquiryMember(memberDTO member) {
 		
 	}
 }
