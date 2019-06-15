@@ -15,7 +15,19 @@
 	<header>
 		<nav class="topbar">
 			<div class="container">
-				<a href="loginForm.html" class="button btn-right">로그인</a>
+				<%
+					// 인증된 세션이 없는경우, 해당페이지를 볼 수 없게 함.
+					String text = "로그아웃";
+					String url = "./Main.jsp";
+					String id = (String)session.getAttribute("id");
+					if (id == null || id.equals("")) {
+						text = "로그인";
+						url = "./Login.jsp";
+					}
+					else
+						session.invalidate();
+				%>
+				<a href=<%= url %> class="button btn-right"><%= text %> </a>
 			</div>
 		</nav>
 
@@ -23,7 +35,7 @@
 			<div class="container">
 				<div class="wrapper">
 					<div class="brand">
-						<a href="main.html"> <img src="images/LogoText.png"
+						<a href="./Main.jsp"> <img src="images/LogoText.png"
 							alt="해오름이엔지">
 						</a>
 					</div>
@@ -40,13 +52,13 @@
 			<div class="container">
 				<div class="navbarInner">
 					<ul class="navbarUl">
-						<li><a href="main.html">홈</a></li>
+						<li><a href="./Main.jsp">홈</a></li>
 						<li><a href="introduce.html">사업 소개</a></li>
 						<li><a href="business.html">주요 업무</a></li>
 						<li><a href="gallery.html">사업 실적</a></li>
 						<li><a href="Counsel.html">고객상담실</a></li>
 						<li><a href="Notice.html">공지사항</a></li>
-						<li><a href="WayCome.html">찾아오시는 길</a></li>
+						<li><a href="./WayCome.jsp">찾아오시는 길</a></li>
 					</ul>
 				</div>
 			</div>

@@ -2,18 +2,15 @@
 	pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html lang="ko">
-
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width" , initial-scale="1">
-<title>회원가입</title>
+<title>로그인</title>
 <link rel="stylesheet" href="css/bootstrap.css">
 <link rel="stylesheet" href="css/main.css">
-<script src="js/registerForm.js"></script>
 </head>
-
 <body>
-	<jsp:include page="header.jsp" flush="false" />
+	<%@include file="header.jsp"%>
 	<div class="container">
 		<div class="row">
 			<div class="col-md-6 col-md-offset-3">
@@ -21,8 +18,7 @@
 					<div class="panel-heading">
 						<div class="row">
 							<div class="col-xs-12">
-								<a href="#" class="active" id="login-form-link">가입 완료! 로그인
-									하세요!</a>
+								<a href="#" class="active" id="login-form-link">로그인</a>
 							</div>
 						</div>
 						<hr>
@@ -30,15 +26,15 @@
 					<div class="panel-body">
 						<div class="row">
 							<div class="col-lg-12">
-								<form id="login-form" method="post" role="form"
-									style="display: block;">
+								<form action="./UserLoginCommand.do" id="login-form"
+									method="post" role="form" style="display: block;">
 									<div class="form-group">
-										<input type="text" name="username" id="username" tabindex="1"
+										<input type="text" name="id" id="username" tabindex="1"
 											class="form-control" placeholder="Username" value="">
 									</div>
 									<div class="form-group">
-										<input type="password" name="password" id="password"
-											tabindex="2" class="form-control" placeholder="Password">
+										<input type="password" name="pwd" id="password" tabindex="2"
+											class="form-control" placeholder="Password">
 									</div>
 									<div class="form-group text-center">
 										<input type="checkbox" tabindex="3" class="" name="remember"
@@ -52,6 +48,16 @@
 											</div>
 										</div>
 									</div>
+									<div class="form-group">
+										<div class="row">
+											<div class="col-lg-12">
+												<div class="text-center">
+													<a href="./Register.jsp" tabindex="5"
+														class="forgot-password">계정이 없으신가요?</a>
+												</div>
+											</div>
+										</div>
+									</div>
 								</form>
 
 							</div>
@@ -61,7 +67,6 @@
 			</div>
 		</div>
 	</div>
-	<jsp:include page="footer.jsp" flush="false" />
+	<%@include file="footer.jsp"%>
 </body>
-
 </html>

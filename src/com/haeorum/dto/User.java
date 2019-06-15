@@ -1,12 +1,12 @@
 package com.haeorum.dto;
 
-public class memberDTO {
-	private String id;
-	private String pwd;
-	private String name;
-	private int phone;
-	private String email;
-	private int typeId;
+public class User {
+	String id;
+	String pw;
+	String name;
+	String phone;
+	String email;
+	int typeId; //관리자 여부
 	
 	public String getId() {
 		return id;
@@ -14,11 +14,11 @@ public class memberDTO {
 	public void setId(String id) {
 		this.id = id;
 	}
-	public String getPwd() {
-		return pwd;
+	public String getPw() {
+		return pw;
 	}
-	public void setPwd(String pwd) {
-		this.pwd = pwd;
+	public void setPw(String pw) {
+		this.pw = pw;
 	}
 	public String getName() {
 		return name;
@@ -26,10 +26,10 @@ public class memberDTO {
 	public void setName(String name) {
 		this.name = name;
 	}
-	public int getPhone() {
+	public String getPhone() {
 		return phone;
 	}
-	public void setPhone(int phone) {
+	public void setPhone(String phone) {
 		this.phone = phone;
 	}
 	public String getEmail() {
@@ -44,6 +44,4 @@ public class memberDTO {
 	public void setTypeId(int typeId) {
 		this.typeId = typeId;
 	}
-	
-	
 }
