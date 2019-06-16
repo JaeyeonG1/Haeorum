@@ -13,7 +13,7 @@ public class FrontController extends HttpServlet {
 
 	protected void doCommand(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
-		
+
 		request.setCharacterEncoding("utf-8");
 
 		String RequestURI = request.getRequestURI();
@@ -38,11 +38,30 @@ public class FrontController extends HttpServlet {
 			forward = new CommandForward();
 			forward.setRedirect(false);
 			forward.setPath("./Introduce.jsp");
-		}  else if (commURI.equals("/Business.do")) {
+		} else if (commURI.equals("/Business.do")) {
 			forward = new CommandForward();
 			forward.setRedirect(false);
 			forward.setPath("./Business.jsp");
-		}  else if (commURI.equals("/UserRegisterCommand.do")) {
+		} else if (commURI.equals("/Gallery.do")) {
+			forward = new CommandForward();
+			forward.setRedirect(false);
+			forward.setPath("./Gallery.jsp");
+		} else if (commURI.equals("/Counsel.do")) {
+			forward = new CommandForward();
+			forward.setRedirect(false);
+			forward.setPath("./Counsel.jsp");
+		} else if (commURI.equals("/Notice.do")) {
+			forward = new CommandForward();
+			forward.setRedirect(false);
+			forward.setPath("./Notice.jsp");
+		} else if (commURI.equals("/DrawUp.do")) {
+			command = new DrawUpCommand();
+			try {
+				forward = command.execute(request, response);
+			} catch (Exception e) {
+				e.printStackTrace();
+			}
+		} else if (commURI.equals("/UserRegisterCommand.do")) {
 			command = new UserRegisterCommand();
 			try {
 				forward = command.execute(request, response);
@@ -51,6 +70,27 @@ public class FrontController extends HttpServlet {
 			}
 		} else if (commURI.equals("/UserLoginCommand.do")) {
 			command = new UserLoginCommand();
+			try {
+				forward = command.execute(request, response);
+			} catch (Exception e) {
+				e.printStackTrace();
+			}
+		} else if (commURI.equals("/UserLogoutCommand.do")) {
+			command = new UserLogoutCommand();
+			try {
+				forward = command.execute(request, response);
+			} catch (Exception e) {
+				e.printStackTrace();
+			}
+		} else if (commURI.equals("/PostRegisterCommand.do")) {
+			command = new PostRegisterCommand();
+			try {
+				forward = command.execute(request, response);
+			} catch (Exception e) {
+				e.printStackTrace();
+			}
+		} else if (commURI.equals("/NoticeListCommand.do")) {
+			command = new NoticeListCommand();
 			try {
 				forward = command.execute(request, response);
 			} catch (Exception e) {

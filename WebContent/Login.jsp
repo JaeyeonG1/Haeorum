@@ -28,7 +28,7 @@
 						<div class="row">
 							<div class="col-lg-12">
 								<form action="./UserLoginCommand.do" id="login-form"
-									method="post" role="form" style="display: block;">
+									method="post" style="display: block;">
 									<div class="form-group">
 										<input type="text" name="id" id="username" tabindex="1"
 											class="form-control" placeholder="Username" value="">

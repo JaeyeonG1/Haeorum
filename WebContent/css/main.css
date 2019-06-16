@@ -982,12 +982,23 @@
     border-bottom-right-radius: 5px; /*�뀒�몢由� 紐⑥꽌由� �뫁湲�寃�*/
     border-bottom-left-radius: 5px; /*�뀒�몢由� 紐⑥꽌由� �뫁湲�寃�*/
 }
-.Title_content{ /*�젣紐� �뀓�뒪�듃�궃*/
+.Title_content{ /*제목 텍스트난*/
     padding-top: 8px;
     padding-bottom: 5px;
-    width: 920px;
+    width: 820px;
     margin-left: 1px;
     margin-bottom: 10px;
+}
+.ImageButtonz{
+    font-weight: bold;
+    padding-bottom: 6px;
+    padding-top: 6px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: 4px;
+    margin-bottom: 10px;
+    float: right;
+
 }
 .Text_Area{
     width: 1000px;

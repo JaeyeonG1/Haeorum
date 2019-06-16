@@ -17,17 +17,21 @@
 			<div class="container">
 				<%
 					// 인증된 세션이 없는경우, 해당페이지를 볼 수 없게 함.
-					String text = "로그아웃";
-					String url = "./Main.jsp";
-					String id = (String)session.getAttribute("id");
+					String id = (String) session.getAttribute("id");
 					if (id == null || id.equals("")) {
-						text = "로그인";
-						url = "./Login.jsp";
-					}
-					else
-						session.invalidate();
 				%>
-				<a href=<%= url %> class="button btn-right"><%= text %> </a>
+				<form action="./Login.do">
+					<input type="submit" class="button btn-right" value="로그인">
+				</form>
+				<%
+					} else {
+				%>
+				<form action="./UserLogoutCommand.do">
+					<input type="submit" class="button btn-right" value="로그아웃">
+				</form>
+				<%
+					}
+				%>
 			</div>
 		</nav>
 
@@ -57,7 +61,11 @@
 						<li><a href="./Business.jsp">주요 업무</a></li>
 						<li><a href="gallery.html">사업 실적</a></li>
 						<li><a href="Counsel.html">고객상담실</a></li>
-						<li><a href="Notice.html">공지사항</a></li>
+						<li>
+							<form id="ntc" action="./NoticeListCommand.do" method="post">
+								<a href=# onclick="this.parentNode.submit(); return false;">공지사항</a>
+							</form>
+						</li>
 						<li><a href="./WayCome.jsp">찾아오시는 길</a></li>
 					</ul>
 				</div>

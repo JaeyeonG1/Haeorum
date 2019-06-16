@@ -29,7 +29,6 @@ public class UserDAO {
 	}
 
 	public boolean UserRegister(User user) {
-		int num = 0;
 		String sql = "";
 
 		int result = 0;
