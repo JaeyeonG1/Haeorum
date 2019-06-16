@@ -11,6 +11,7 @@
 </head>
 <body>
 	<%@include file="header.jsp"%>
+	
 	<div class="content">
 		<div class="container">
 			<div id="sliderWrapper">
@@ -123,6 +124,7 @@
 			</div>
 		</div>
 	</section>
+	
 	<%@include file="footer.jsp"%>
 </body>
 </html>

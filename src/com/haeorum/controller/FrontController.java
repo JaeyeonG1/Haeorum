@@ -34,7 +34,15 @@ public class FrontController extends HttpServlet {
 			forward = new CommandForward();
 			forward.setRedirect(false);
 			forward.setPath("./Login.jsp");
-		} else if (commURI.equals("/UserRegisterCommand.do")) {
+		} else if (commURI.equals("/Introduce.do")) {
+			forward = new CommandForward();
+			forward.setRedirect(false);
+			forward.setPath("./Introduce.jsp");
+		}  else if (commURI.equals("/Business.do")) {
+			forward = new CommandForward();
+			forward.setRedirect(false);
+			forward.setPath("./Business.jsp");
+		}  else if (commURI.equals("/UserRegisterCommand.do")) {
 			command = new UserRegisterCommand();
 			try {
 				forward = command.execute(request, response);

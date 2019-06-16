@@ -16,8 +16,8 @@
 		<nav class="footbar">
 			<div class="container">
 				<div class="btnGroup">
-					<a href="introduce.html" class="button">회사소개</a> <a
-						href="business.html" class="button">주요업무</a> <a
+					<a href="./Introduce.jsp" class="button">회사소개</a> <a
+						href="./Business.jsp" class="button">주요업무</a> <a
 						href="Counsel.html" class="button">고객상담실</a>
 				</div>
 			</div>

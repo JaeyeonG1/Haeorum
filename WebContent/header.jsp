@@ -53,8 +53,8 @@
 				<div class="navbarInner">
 					<ul class="navbarUl">
 						<li><a href="./Main.jsp">홈</a></li>
-						<li><a href="introduce.html">사업 소개</a></li>
-						<li><a href="business.html">주요 업무</a></li>
+						<li><a href="./Introduce.jsp">사업 소개</a></li>
+						<li><a href="./Business.jsp">주요 업무</a></li>
 						<li><a href="gallery.html">사업 실적</a></li>
 						<li><a href="Counsel.html">고객상담실</a></li>
 						<li><a href="Notice.html">공지사항</a></li>

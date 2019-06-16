@@ -11,6 +11,7 @@
 </head>
 <body>
 	<%@include file="header.jsp"%>
+	
 	<div class="content">
 		<div class="container">
 			<div class="article">
