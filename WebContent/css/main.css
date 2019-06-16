@@ -1,5 +1,5 @@
 *{
-    font-family: 'Malgun Gothic','Helvetica Neue', Helvetica, Arial, '돋움', Dotum;
+    font-family: 'Malgun Gothic','Helvetica Neue', Helvetica, Arial, '�룍��', Dotum;
     margin: 0;
     padding: 0;
     list-style-type: none;
@@ -474,7 +474,7 @@
 }
 .Make102:hover{
     color:white;
-    background-color: transparent; /*마우스 올리면 커서바뀜*/
+    background-color: transparent; /*留덉슦�뒪 �삱由щ㈃ 而ㅼ꽌諛붾��*/
 }
 .Search-container102 {
     margin-bottom: 50px;
@@ -511,7 +511,7 @@
 }
 .Make102:hover{
     color:white;
-    background-color: transparent; /*마우스 올리면 커서바뀜*/
+    background-color: transparent; /*留덉슦�뒪 �삱由щ㈃ 而ㅼ꽌諛붾��*/
 }
 
 /** CONTENT FOR NOTICERESULT **/
@@ -541,16 +541,17 @@
     margin-bottom: 10px;
 }
 .desc{
-    font-family: 'Helvetica Neue', Helvetica, Arial, 'Malgun Gothic', '돋움', Dotum;
+    font-family: 'Helvetica Neue', Helvetica, Arial, 'Malgun Gothic', '�룍��', Dotum;
     color: #999;
     font-size: 14px;
 }
 .desc2{
-    font-family: 'Helvetica Neue', Helvetica, Arial, 'Malgun Gothic', '돋움', Dotum;
+    font-family: 'Helvetica Neue', Helvetica, Arial, 'Malgun Gothic', '�룍��', Dotum;
     position: relative;
     top: -1px;
     color: #999;
 }
+
 .Admin-Content101{
     margin-top: 20px;
     margin-left: 20px;
@@ -564,6 +565,11 @@
 }
 .no-coments101{
     border-top: 1px dotted #ccc;
+}
+
+.textArea101{
+    margin-left: 20px;
+    width: 950px;
 }
 .back-button101{    
     margin-top: 20px;
@@ -579,6 +585,36 @@
 }
 .back101:hover{
     color:white;
+    background-color: transparent; /*留덉슦�뒪 �삱由щ㈃ 而ㅼ꽌諛붾��*/
+}
+
+.reply101{
+    color: black;
+    
+    text-decoration: none;
+}
+.reply101:hover{
+    color:white;
+    background-color: transparent; /*마우스 올리면 커서바뀜*/
+}
+
+.replyDelete101{
+    color: black;
+    
+    text-decoration: none;
+}
+.replyDelete101:hover{
+    color:white;
+    background-color: transparent; /*마우스 올리면 커서바뀜*/
+}
+
+.replyModify101{
+    color: black;
+    
+    text-decoration: none;
+}
+.replyModify101:hover{
+    color:white;
     background-color: transparent; /*마우스 올리면 커서바뀜*/
 }
 .modify101{
@@ -588,7 +624,7 @@
 }
 .modify101:hover{
     color:white;
-    background-color: transparent; /*마우스 올리면 커서바뀜*/
+    background-color: transparent; /*留덉슦�뒪 �삱由щ㈃ 而ㅼ꽌諛붾��*/
 }
 .delete101{
     color: black;
@@ -597,7 +633,7 @@
 }
 .delete101:hover{
     color:white;
-    background-color: transparent; /*마우스 올리면 커서바뀜*/
+    background-color: transparent; /*留덉슦�뒪 �삱由щ㈃ 而ㅼ꽌諛붾��*/
 }
 
 /** CONTENT FOR CUSTOMERCOUNSELING **/
@@ -638,7 +674,7 @@
 }
 .Make103:hover{
     color:white;
-    background-color: transparent; /*마우스 올리면 커서바뀜*/
+    background-color: transparent; /*留덉슦�뒪 �삱由щ㈃ 而ㅼ꽌諛붾��*/
 }
 .Search-container103 {
     margin-bottom: 50px;
@@ -672,7 +708,7 @@
 }
 .Make103:hover{
     color:white;
-    background-color: transparent; /*마우스 올리면 커서바뀜*/
+    background-color: transparent; /*留덉슦�뒪 �삱由щ㈃ 而ㅼ꽌諛붾��*/
 }
 
 /** CONTENT FOR COUNSELINGRESULT **/
@@ -702,12 +738,12 @@
     margin-bottom: 10px;
 }
 .desc104{
-    font-family: 'Helvetica Neue', Helvetica, Arial, 'Malgun Gothic', '돋움', Dotum;
+    font-family: 'Helvetica Neue', Helvetica, Arial, 'Malgun Gothic', '�룍��', Dotum;
     color: #999;
     font-size: 14px;
 }
 .descZ104{
-    font-family: 'Helvetica Neue', Helvetica, Arial, 'Malgun Gothic', '돋움', Dotum;
+    font-family: 'Helvetica Neue', Helvetica, Arial, 'Malgun Gothic', '�룍��', Dotum;
     position: relative;
     top: -1px;
     color: #999;
@@ -723,9 +759,18 @@
     border: 1px solid #e5e8ec;
     background: #f5f8f9;
 }
+
+
+
 .no-coments104{
     border-top: 1px dotted #ccc;
 }
+
+.textArea104{
+    margin-left: 20px;
+    width: 950px;
+}
+
 .back-button104{
     margin-top: 20px;
     min-height: 40px;
@@ -740,6 +785,37 @@
 }
 .back104:hover{
     color:white;
+    background-color: transparent; /*留덉슦�뒪 �삱由щ㈃ 而ㅼ꽌諛붾��*/
+}
+
+.reply104{
+    color: black;
+    
+    text-decoration: none;
+}
+.reply104:hover{
+    color:white;
+    background-color: transparent; /*마우스 올리면 커서바뀜*/
+}
+
+
+.replyDelete104{
+    color: black;
+    
+    text-decoration: none;
+}
+.replyDelete104:hover{
+    color:white;
+    background-color: transparent; /*마우스 올리면 커서바뀜*/
+}
+
+.replyModify104{
+    color: black;
+    
+    text-decoration: none;
+}
+.replyModify104:hover{
+    color:white;
     background-color: transparent; /*마우스 올리면 커서바뀜*/
 }
 .modify104{
@@ -749,7 +825,7 @@
 }
 .modify104:hover{
     color:white;
-    background-color: transparent; /*마우스 올리면 커서바뀜*/
+    background-color: transparent; /*留덉슦�뒪 �삱由щ㈃ 而ㅼ꽌諛붾��*/
 }
 .delete104{
     color: black;
@@ -758,7 +834,7 @@
 }
 .delete104:hover{
     color:white;
-    background-color: transparent; /*마우스 올리면 커서바뀜*/
+    background-color: transparent; /*留덉슦�뒪 �삱由щ㈃ 而ㅼ꽌諛붾��*/
 }
 
 /** CONTENT FOR DRAWUP **/
@@ -785,128 +861,128 @@
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-weight: lighter;
 }
-.Info-container{ /*이름,비밀번호 포함 컨테이너*/
+.Info-container{ /*�씠由�,鍮꾨�踰덊샇 �룷�븿 而⑦뀒�씠�꼫*/
     display: inline-block;
     margin-right: 5px;
     margin-left: 5px;
     margin-bottom: 10px;
 }
-.Info1{ /*이름 라벨, 이름 텍스트난 포함 div*/
+.Info1{ /*�씠由� �씪踰�, �씠由� �뀓�뒪�듃�궃 �룷�븿 div*/
     display: inline-block;
     margin-right: 34px;
 }
-.Info_Name{ /*이름 라벨*/
+.Info_Name{ /*�씠由� �씪踰�*/
     padding-bottom: 4px;
     padding-top: 4px;
     padding-left: 20px;
     padding-right: 20px;
 
-    border:ridge; /*테두리 모양*/
-    border-top-width: 2px; /*테두리 굵기*/
-    border-bottom-width: 2px; /*테두리 굵기*/
-    border-left-width: 2px; /*테두리 굵기*/
-    border-right-width: 2px; /*테두리 굵기*/
+    border:ridge; /*�뀒�몢由� 紐⑥뼇*/
+    border-top-width: 2px; /*�뀒�몢由� 援듦린*/
+    border-bottom-width: 2px; /*�뀒�몢由� 援듦린*/
+    border-left-width: 2px; /*�뀒�몢由� 援듦린*/
+    border-right-width: 2px; /*�뀒�몢由� 援듦린*/
 
-    border-top-left-radius: 5px; /*테두리 모서리 둥글게*/
-    border-top-right-radius: 5px; /*테두리 모서리 둥글게*/
-    border-bottom-right-radius: 5px; /*테두리 모서리 둥글게*/
-    border-bottom-left-radius: 5px; /*테두리 모서리 둥글게*/
+    border-top-left-radius: 5px; /*�뀒�몢由� 紐⑥꽌由� �뫁湲�寃�*/
+    border-top-right-radius: 5px; /*�뀒�몢由� 紐⑥꽌由� �뫁湲�寃�*/
+    border-bottom-right-radius: 5px; /*�뀒�몢由� 紐⑥꽌由� �뫁湲�寃�*/
+    border-bottom-left-radius: 5px; /*�뀒�몢由� 紐⑥꽌由� �뫁湲�寃�*/
 }
-.Name_content{ /*이름 텍스트난*/
+.Name_content{ /*�씠由� �뀓�뒪�듃�궃*/
     padding-top: 8px;
     padding-bottom: 5px;
     width:400px;
 }
-.Info2{ /*비밀번호 라벨, 비밀번호 텍스트난 포함 div*/
+.Info2{ /*鍮꾨�踰덊샇 �씪踰�, 鍮꾨�踰덊샇 �뀓�뒪�듃�궃 �룷�븿 div*/
     display: inline-block;
 }
-.Info_Password{ /*비밀번호 라벨*/
+.Info_Password{ /*鍮꾨�踰덊샇 �씪踰�*/
     padding: 4px;
-    border:ridge; /*테두리 모양*/
-    border-top-width: 2px; /*테두리 굵기*/
-    border-bottom-width: 2px; /*테두리 굵기*/
-    border-left-width: 2px; /*테두리 굵기*/
-    border-right-width: 2px; /*테두리 굵기*/
-    border-top-left-radius: 5px; /*테두리 모서리 둥글게*/
-    border-top-right-radius: 5px; /*테두리 모서리 둥글게*/
-    border-bottom-right-radius: 5px; /*테두리 모서리 둥글게*/
-    border-bottom-left-radius: 5px; /*테두리 모서리 둥글게*/
+    border:ridge; /*�뀒�몢由� 紐⑥뼇*/
+    border-top-width: 2px; /*�뀒�몢由� 援듦린*/
+    border-bottom-width: 2px; /*�뀒�몢由� 援듦린*/
+    border-left-width: 2px; /*�뀒�몢由� 援듦린*/
+    border-right-width: 2px; /*�뀒�몢由� 援듦린*/
+    border-top-left-radius: 5px; /*�뀒�몢由� 紐⑥꽌由� �뫁湲�寃�*/
+    border-top-right-radius: 5px; /*�뀒�몢由� 紐⑥꽌由� �뫁湲�寃�*/
+    border-bottom-right-radius: 5px; /*�뀒�몢由� 紐⑥꽌由� �뫁湲�寃�*/
+    border-bottom-left-radius: 5px; /*�뀒�몢由� 紐⑥꽌由� �뫁湲�寃�*/
 }
-.Password_content{ /*비밀번호 텍스트난*/
+.Password_content{ /*鍮꾨�踰덊샇 �뀓�뒪�듃�궃*/
     padding-top: 8px;
     padding-bottom: 5px;
     width: 400px;
 }
-.Info-container2{ /*이메일,홈페이지 포함 컨테이너*/
+.Info-container2{ /*�씠硫붿씪,�솃�럹�씠吏� �룷�븿 而⑦뀒�씠�꼫*/
     display: inline-block;
     margin-right: 5px;
     margin-left: 5px;
     margin-bottom: 10px;
 }
-.Info3{ /*이메일 라벨, 이메일 텍스트난 포함 div*/
+.Info3{ /*�씠硫붿씪 �씪踰�, �씠硫붿씪 �뀓�뒪�듃�궃 �룷�븿 div*/
     display: inline-block;
     margin-right: 34px;
 }
-.Info_e-mail{ /*이메일 라벨*/
+.Info_e-mail{ /*�씠硫붿씪 �씪踰�*/
     padding-bottom: 4px;
     padding-top: 4px;
     padding-left: 12px;
     padding-right: 12px;
 
-    border:ridge; /*테두리 모양*/
-    border-top-width: 2px; /*테두리 굵기*/
-    border-bottom-width: 2px; /*테두리 굵기*/
-    border-left-width: 2px; /*테두리 굵기*/
-    border-right-width: 2px; /*테두리 굵기*/
+    border:ridge; /*�뀒�몢由� 紐⑥뼇*/
+    border-top-width: 2px; /*�뀒�몢由� 援듦린*/
+    border-bottom-width: 2px; /*�뀒�몢由� 援듦린*/
+    border-left-width: 2px; /*�뀒�몢由� 援듦린*/
+    border-right-width: 2px; /*�뀒�몢由� 援듦린*/
 
-    border-top-left-radius: 5px; /*테두리 모서리 둥글게*/
-    border-top-right-radius: 5px; /*테두리 모서리 둥글게*/
-    border-bottom-right-radius: 5px; /*테두리 모서리 둥글게*/
-    border-bottom-left-radius: 5px; /*테두리 모서리 둥글게*/
+    border-top-left-radius: 5px; /*�뀒�몢由� 紐⑥꽌由� �뫁湲�寃�*/
+    border-top-right-radius: 5px; /*�뀒�몢由� 紐⑥꽌由� �뫁湲�寃�*/
+    border-bottom-right-radius: 5px; /*�뀒�몢由� 紐⑥꽌由� �뫁湲�寃�*/
+    border-bottom-left-radius: 5px; /*�뀒�몢由� 紐⑥꽌由� �뫁湲�寃�*/
 }
-.e-mail_content{ /*이메일 텍스트난*/
+.e-mail_content{ /*�씠硫붿씪 �뀓�뒪�듃�궃*/
     padding-top: 8px;
     padding-bottom: 5px;
     width: 400px;
 }
-.Info4{ /*홈페이지 라벨, 홈페이지 텍스트난 포함 div*/
+.Info4{ /*�솃�럹�씠吏� �씪踰�, �솃�럹�씠吏� �뀓�뒪�듃�궃 �룷�븿 div*/
     display: inline-block;
 }
-.Info_Homepage{ /*홈페이지 라벨*/
+.Info_Homepage{ /*�솃�럹�씠吏� �씪踰�*/
     padding: 4px;
-    border:ridge; /*테두리 모양*/
-    border-top-width: 2px; /*테두리 굵기*/
-    border-bottom-width: 2px; /*테두리 굵기*/
-    border-left-width: 2px; /*테두리 굵기*/
-    border-right-width: 2px; /*테두리 굵기*/
-    border-top-left-radius: 5px; /*테두리 모서리 둥글게*/
-    border-top-right-radius: 5px; /*테두리 모서리 둥글게*/
-    border-bottom-right-radius: 5px; /*테두리 모서리 둥글게*/
-    border-bottom-left-radius: 5px; /*테두리 모서리 둥글게*/
+    border:ridge; /*�뀒�몢由� 紐⑥뼇*/
+    border-top-width: 2px; /*�뀒�몢由� 援듦린*/
+    border-bottom-width: 2px; /*�뀒�몢由� 援듦린*/
+    border-left-width: 2px; /*�뀒�몢由� 援듦린*/
+    border-right-width: 2px; /*�뀒�몢由� 援듦린*/
+    border-top-left-radius: 5px; /*�뀒�몢由� 紐⑥꽌由� �뫁湲�寃�*/
+    border-top-right-radius: 5px; /*�뀒�몢由� 紐⑥꽌由� �뫁湲�寃�*/
+    border-bottom-right-radius: 5px; /*�뀒�몢由� 紐⑥꽌由� �뫁湲�寃�*/
+    border-bottom-left-radius: 5px; /*�뀒�몢由� 紐⑥꽌由� �뫁湲�寃�*/
 }
-.Homepage_content{ /*홈페이지 텍스트난*/
+.Homepage_content{ /*�솃�럹�씠吏� �뀓�뒪�듃�궃*/
     padding-top: 8px;
     padding-bottom: 5px;
     width: 400px;
 }
-.Info_Title{ /*제목 라벨*/
+.Info_Title{ /*�젣紐� �씪踰�*/
     padding-bottom: 4px;
     padding-top: 4px;
     padding-left: 20px;
     padding-right: 20px;
 
-    border:ridge; /*테두리 모양*/
-    border-top-width: 2px; /*테두리 굵기*/
-    border-bottom-width: 2px; /*테두리 굵기*/
-    border-left-width: 2px; /*테두리 굵기*/
-    border-right-width: 2px; /*테두리 굵기*/
+    border:ridge; /*�뀒�몢由� 紐⑥뼇*/
+    border-top-width: 2px; /*�뀒�몢由� 援듦린*/
+    border-bottom-width: 2px; /*�뀒�몢由� 援듦린*/
+    border-left-width: 2px; /*�뀒�몢由� 援듦린*/
+    border-right-width: 2px; /*�뀒�몢由� 援듦린*/
 
-    border-top-left-radius: 5px; /*테두리 모서리 둥글게*/
-    border-top-right-radius: 5px; /*테두리 모서리 둥글게*/
-    border-bottom-right-radius: 5px; /*테두리 모서리 둥글게*/
-    border-bottom-left-radius: 5px; /*테두리 모서리 둥글게*/
+    border-top-left-radius: 5px; /*�뀒�몢由� 紐⑥꽌由� �뫁湲�寃�*/
+    border-top-right-radius: 5px; /*�뀒�몢由� 紐⑥꽌由� �뫁湲�寃�*/
+    border-bottom-right-radius: 5px; /*�뀒�몢由� 紐⑥꽌由� �뫁湲�寃�*/
+    border-bottom-left-radius: 5px; /*�뀒�몢由� 紐⑥꽌由� �뫁湲�寃�*/
 }
-.Title_content{ /*제목 텍스트난*/
+.Title_content{ /*�젣紐� �뀓�뒪�듃�궃*/
     padding-top: 8px;
     padding-bottom: 5px;
     width: 920px;
@@ -918,26 +994,26 @@
     height: 200px;
     margin-bottom: 10px; 
 }
-.File1{ /*파일#1 라벨, 파일#1 텍스트난 포함 div*/
+.File1{ /*�뙆�씪#1 �씪踰�, �뙆�씪#1 �뀓�뒪�듃�궃 �룷�븿 div*/
     margin-bottom: 10px;
     margin-right: 10px;
 }
-.File_1{ /*파일#1 라벨*/
+.File_1{ /*�뙆�씪#1 �씪踰�*/
     padding-bottom: 4px;
     padding-top: 4px;
     padding-left: 11px;
     padding-right: 11px;
-    border:ridge; /*테두리 모양*/
-    border-top-width: 2px; /*테두리 굵기*/
-    border-bottom-width: 2px; /*테두리 굵기*/
-    border-left-width: 2px; /*테두리 굵기*/
-    border-right-width: 2px; /*테두리 굵기*/
-    border-top-left-radius: 5px; /*테두리 모서리 둥글게*/
-    border-top-right-radius: 5px; /*테두리 모서리 둥글게*/
-    border-bottom-right-radius: 5px; /*테두리 모서리 둥글게*/
-    border-bottom-left-radius: 5px; /*테두리 모서리 둥글게*/
+    border:ridge; /*�뀒�몢由� 紐⑥뼇*/
+    border-top-width: 2px; /*�뀒�몢由� 援듦린*/
+    border-bottom-width: 2px; /*�뀒�몢由� 援듦린*/
+    border-left-width: 2px; /*�뀒�몢由� 援듦린*/
+    border-right-width: 2px; /*�뀒�몢由� 援듦린*/
+    border-top-left-radius: 5px; /*�뀒�몢由� 紐⑥꽌由� �뫁湲�寃�*/
+    border-top-right-radius: 5px; /*�뀒�몢由� 紐⑥꽌由� �뫁湲�寃�*/
+    border-bottom-right-radius: 5px; /*�뀒�몢由� 紐⑥꽌由� �뫁湲�寃�*/
+    border-bottom-left-radius: 5px; /*�뀒�몢由� 紐⑥꽌由� �뫁湲�寃�*/
 }
-.File1_content{ /*파일#1 텍스트난*/
+.File1_content{ /*�뙆�씪#1 �뀓�뒪�듃�궃*/
     padding-top: 8px;
     padding-bottom: 5px;
     width: 800px;
@@ -950,26 +1026,26 @@
     padding-right: 20px;
     margin-left: 10px;
 }
-.File2{ /*파일#2 라벨, 파일#2 텍스트난 포함 div*/
+.File2{ /*�뙆�씪#2 �씪踰�, �뙆�씪#2 �뀓�뒪�듃�궃 �룷�븿 div*/
     margin-bottom: 10px;
     margin-right: 10px;   
 }
-.File_2{ /*파일#2 라벨*/
+.File_2{ /*�뙆�씪#2 �씪踰�*/
     padding-bottom: 4px;
     padding-top: 4px;
     padding-left: 11px;
     padding-right: 11px;
-    border:ridge; /*테두리 모양*/
-    border-top-width: 2px; /*테두리 굵기*/
-    border-bottom-width: 2px; /*테두리 굵기*/
-    border-left-width: 2px; /*테두리 굵기*/
-    border-right-width: 2px; /*테두리 굵기*/
-    border-top-left-radius: 5px; /*테두리 모서리 둥글게*/
-    border-top-right-radius: 5px; /*테두리 모서리 둥글게*/
-    border-bottom-right-radius: 5px; /*테두리 모서리 둥글게*/
-    border-bottom-left-radius: 5px; /*테두리 모서리 둥글게*/
+    border:ridge; /*�뀒�몢由� 紐⑥뼇*/
+    border-top-width: 2px; /*�뀒�몢由� 援듦린*/
+    border-bottom-width: 2px; /*�뀒�몢由� 援듦린*/
+    border-left-width: 2px; /*�뀒�몢由� 援듦린*/
+    border-right-width: 2px; /*�뀒�몢由� 援듦린*/
+    border-top-left-radius: 5px; /*�뀒�몢由� 紐⑥꽌由� �뫁湲�寃�*/
+    border-top-right-radius: 5px; /*�뀒�몢由� 紐⑥꽌由� �뫁湲�寃�*/
+    border-bottom-right-radius: 5px; /*�뀒�몢由� 紐⑥꽌由� �뫁湲�寃�*/
+    border-bottom-left-radius: 5px; /*�뀒�몢由� 紐⑥꽌由� �뫁湲�寃�*/
 }
-.File2_content{ /*파일#2 텍스트난*/
+.File2_content{ /*�뙆�씪#2 �뀓�뒪�듃�궃*/
     padding-top: 8px;
     padding-bottom: 5px;
     width: 800px;
@@ -987,7 +1063,7 @@
     margin: 40px 0 20px;
     float: right;
 }
-.Complete_button{ /*작성 완료버튼*/
+.Complete_button{ /*�옉�꽦 �셿猷뚮쾭�듉*/
     font-weight: bold;
     padding-bottom: 6px;
     padding-top: 6px;
@@ -996,18 +1072,18 @@
 }
 .Complete_button:hover{
     color: black;
-    background-color: transparent; /*마우스 올리면 커서바뀜*/
+    background-color: transparent; /*留덉슦�뒪 �삱由щ㈃ 而ㅼ꽌諛붾��*/
 }
-.back_button{ /*뒤로가기 버튼*/
+.back_button{ /*�뮘濡쒓�湲� 踰꾪듉*/
     font-weight: bold;
     text-decoration: none;
     color: black;
 }
-.back_button:hover{ /*뒤로가기 버튼 마우스올리면*/
+.back_button:hover{ /*�뮘濡쒓�湲� 踰꾪듉 留덉슦�뒪�삱由щ㈃*/
     color:white;
-    background-color: transparent; /*마우스 올리면 커서바뀜*/
+    background-color: transparent; /*留덉슦�뒪 �삱由щ㈃ 而ㅼ꽌諛붾��*/
 }
-/*뒤로가기 버튼, 작성완료 버튼 , 파일선택 버튼 문제 */
+/*�뮘濡쒓�湲� 踰꾪듉, �옉�꽦�셿猷� 踰꾪듉 , �뙆�씪�꽑�깮 踰꾪듉 臾몄젣 */
 
 /** CONTENT FOR AUTHORITY **/
 
