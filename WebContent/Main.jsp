@@ -11,7 +11,6 @@
 </head>
 <body>
 	<%@include file="header.jsp"%>
-	
 	<div class="content">
 		<div class="container">
 			<div id="sliderWrapper">
@@ -112,19 +111,18 @@
 				<img src="images/main_bn4.jpg" width="100%" height="100%"
 					usemap="#main_bn4.jpg">
 				<map name="main_bn4.jpg">
-					<area shape="rect" coords="0,0,135,78" href="Introduce.html"
-						target="_self">
-					<area shape="rect" coords="139,0,363,78" href="business.html"
-						target="_self">
-					<area shape="rect" coords="0,82,135,155" href="Counsel.html"
-						target="_self">
-					<area shape="rect" coords="139,82,363,155" href="WayCome.html"
-						target="_self">
+					<area shape="rect" coords="0,0,135,78" href="./Introduce.jsp"
+						target="_self" id="q1" >
+					<area shape="rect" coords="139,0,363,78" href="./Business.jsp"
+						target="_self" id="q2" >
+					<area shape="rect" coords="0,82,135,155" href="./Counsel.do?board=1&pageNum=1"
+						target="_self" id="q3" >
+					<area shape="rect" coords="139,82,363,155" href="./WayCome.jsp"
+						target="_self" id="q4" >
 				</map>
 			</div>
 		</div>
 	</section>
 	<%@include file="footer.jsp"%>
-
 </body>
 </html>

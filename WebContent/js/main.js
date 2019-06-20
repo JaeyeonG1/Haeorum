@@ -72,8 +72,20 @@ function pagination() {
 
 pagination();
 
-// 게시판 페이징 함수
-function page(idx){
-    var pagenum = idx;           
-    location.href="${pageContext.request.contextPath}/Notice.do?pageNum="+pagenum;    
-}
+let q1 = document.getElementById(`q1`);
+let q2 = document.getElementById(`q2`);
+let q3 = document.getElementById(`q3`);
+let q4 = document.getElementById(`q4`);
+
+q1.addEventListener(`click`, function(){
+    location.href=`./Introduce.jsp`;
+});
+q2.addEventListener(`click`, function(){
+    location.href=`./business.jsp`;
+});
+q3.addEventListener(`click`, function(){
+    location.href=`./Counsel.jsp`;
+});
+q4.addEventListener(`click`, function(){
+    location.href=`./Introduce.jsp`;
+});

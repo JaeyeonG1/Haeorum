@@ -52,6 +52,7 @@
 		</div>
 	</footer>
 	<script src="js/main.js"></script>
+	<script src="js/registerForm.js"></script>
 </body>
 
 </html>
