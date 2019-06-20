@@ -11,10 +11,10 @@
 <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-<script type="text/javascript">
+	<script type="text/javascript">
 	function page(idx){
 		var pagenum = idx;           
-		location.href="${pageContext.request.contextPath}/Notice.do?pageNum="+pagenum;    
+		location.href="${pageContext.request.contextPath}/Notice.do?pageNum="+pagenum+"&board=0";    
 }
 </script>
 	<%@include file="header.jsp"%>
@@ -40,12 +40,12 @@
 						</thead>
 						<tbody>
 							<c:forEach var="list" items="${list }">
-								<tr>
-									<td style="width:10%">${list.getId() }</td>
-									<td style="width:10%">${list.getUserId() }</td>
-									<td style="width:50%">${list.getTitle() }</td>
-									<td style="width:20%">${list.getTime() }</td>
-									<td style="width:10%">${list.getHits() }</td>
+								<tr style="cursor:pointer" onclick="location.href='./NoticeInquiry.do?id=${list.getId() }'">
+									<td style="width: 10%">${list.getId() }</td>
+									<td style="width: 10%">${list.getUserId() }</td>
+									<td style="width: 50%">${list.getTitle() }</td>
+									<td style="width: 20%">${list.getTime() }</td>
+									<td style="width: 10%">${list.getHits() }</td>
 								</tr>
 							</c:forEach>
 						</tbody>
@@ -54,14 +54,16 @@
 					<div class="text-center">
 						<ul class="pagination">
 							<c:if test="${page.isPrev() }">
-								<li><a href='javascript:void(0);' onclick="page(${page.getStartPage()-1});">&laquo;</a>
+								<li><a href='javascript:void(0);'
+									onclick="page(${page.getStartPage()-1});">&laquo;</a>
 							</c:if>
 							<c:forEach begin="${page.getStartPage()}"
 								end="${page.getEndPage()}" var="idx">
 								<li><a href='javascript:void(0);' onclick="page(${idx});">${idx }</a></li>
 							</c:forEach>
 							<c:if test="${page.isNext() }">
-								<li><a href='javascript:void(0);' onclick="page(${page.getEndPage()+1});">&raquo;</a>
+								<li><a href='javascript:void(0);'
+									onclick="page(${page.getEndPage()+1});">&raquo;</a>
 							</c:if>
 						</ul>
 					</div>

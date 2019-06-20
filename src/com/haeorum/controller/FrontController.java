@@ -42,14 +42,6 @@ public class FrontController extends HttpServlet {
 			forward = new CommandForward();
 			forward.setRedirect(false);
 			forward.setPath("./Business.jsp");
-		} else if (commURI.equals("/Gallery.do")) {
-			forward = new CommandForward();
-			forward.setRedirect(false);
-			forward.setPath("./Gallery.jsp");
-		} else if (commURI.equals("/Counsel.do")) {
-			forward = new CommandForward();
-			forward.setRedirect(false);
-			forward.setPath("./Counsel.jsp");
 		} else if (commURI.equals("/DrawUp.do")) {
 			command = new DrawUpCommand();
 			try {
@@ -57,8 +49,29 @@ public class FrontController extends HttpServlet {
 			} catch (Exception e) {
 				e.printStackTrace();
 			}
-		} else if (commURI.equals("/Notice.do")) {
+		} else if (commURI.equals("/Counsel.do")) {
 			command = new NoticeListCommand();
+			try {
+				forward = command.execute(request, response);
+			} catch (Exception e) {
+				e.printStackTrace();
+			}
+		} else if (commURI.equals("/CounselInquiry.do")) {
+			command = new NoticeInquiryCommand();
+			try {
+				forward = command.execute(request, response);
+			} catch (Exception e) {
+				e.printStackTrace();
+			}
+		}  else if (commURI.equals("/Notice.do")) {
+			command = new NoticeListCommand();
+			try {
+				forward = command.execute(request, response);
+			} catch (Exception e) {
+				e.printStackTrace();
+			}
+		} else if (commURI.equals("/NoticeInquiry.do")) {
+			command = new NoticeInquiryCommand();
 			try {
 				forward = command.execute(request, response);
 			} catch (Exception e) {

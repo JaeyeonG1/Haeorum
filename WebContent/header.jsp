@@ -59,12 +59,19 @@
 						<li><a href="./Main.do">홈</a></li>
 						<li><a href="./Introduce.do">사업 소개</a></li>
 						<li><a href="./Business.do">주요 업무</a></li>
-						<li><a href="gallery.html">사업 실적</a></li>
-						<li><a href="Counsel.html">고객상담실</a></li>
+						<li><a>사업 실적</a></li>
 						<li>
-							<form id="ntc" action="./Notice.do" method="post">
-								<input type="hidden" name="pageNum" value="1">
-								<a href=# onclick="this.parentNode.submit(); return false;">공지사항</a>
+							<form action="./Counsel.do" method="post">
+								<input type="hidden" name="pageNum" value="1"> <input
+									type="hidden" name="board" value="1"> <a href=#
+									onclick="this.parentNode.submit(); return false;">고객 상담실</a>
+							</form>
+						</li>
+						<li>
+							<form action="./Notice.do" method="post">
+								<input type="hidden" name="pageNum" value="1"> <input
+									type="hidden" name="board" value="0"> <a href=#
+									onclick="this.parentNode.submit(); return false;">공지사항</a>
 							</form>
 						</li>
 						<li><a href="./WayCome.jsp">찾아오시는 길</a></li>

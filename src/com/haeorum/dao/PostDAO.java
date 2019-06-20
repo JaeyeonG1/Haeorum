@@ -70,36 +70,8 @@ public class PostDAO {
 		}
 		return false;
 	}
-
-	public ArrayList<Post> PagedPostListInquiry(int start, int count) {
-		ArrayList<Post> list = new ArrayList<Post>();
-		
-		try {
-			pstmt = con.prepareStatement("select * from post order by id desc limit ?,?");
-			pstmt.setInt(1, start);
-			pstmt.setInt(2, count);
-			rs = pstmt.executeQuery();
-
-			while (rs.next()) {
-				Post post = new Post();
-				post.setId(rs.getInt("id"));
-				post.setTitle(rs.getString("title"));
-				post.setContents(rs.getString("contents"));
-				post.setTime(rs.getTimestamp("time"));
-				post.setHits(rs.getInt("hits"));
-				post.setBoardId(rs.getInt("boardId"));
-				post.setUserId(rs.getString("userId"));
-				list.add(post);
-			}
-		} catch (Exception e) {
-			System.out.println("리스트 생성 실패");
-			e.printStackTrace();
-		}
-		System.out.println(list.size());
-		return list;
-	}
 	
-	public ArrayList<Post> AllPostListInquiry() {
+	public ArrayList<Post> PostListInquiry() {
 		ArrayList<Post> list = new ArrayList<Post>();
 		
 		try {
@@ -123,5 +95,85 @@ public class PostDAO {
 		}
 		System.out.println(list.size());
 		return list;
+	}
+	
+	public ArrayList<Post> AllPostListInquiry(int boardId) {
+		ArrayList<Post> list = new ArrayList<Post>();
+		
+		try {
+			pstmt = con.prepareStatement("select * from post where boardId = ? order by id desc");
+			pstmt.setInt(1, boardId);
+			rs = pstmt.executeQuery();
+
+			while (rs.next()) {
+				Post post = new Post();
+				post.setId(rs.getInt("id"));
+				post.setTitle(rs.getString("title"));
+				post.setContents(rs.getString("contents"));
+				post.setTime(rs.getTimestamp("time"));
+				post.setHits(rs.getInt("hits"));
+				post.setBoardId(rs.getInt("boardId"));
+				post.setUserId(rs.getString("userId"));
+				list.add(post);
+			}
+		} catch (Exception e) {
+			System.out.println("리스트 생성 실패");
+			e.printStackTrace();
+		}
+		System.out.println(list.size());
+		return list;
+	}
+	
+	public ArrayList<Post> PagedPostListInquiry(int boardId, int start, int count) {
+		ArrayList<Post> list = new ArrayList<Post>();
+		
+		try {
+			pstmt = con.prepareStatement("select * from post where boardId = ? order by id desc limit ?,?");
+			pstmt.setInt(1, boardId);
+			pstmt.setInt(2, start);
+			pstmt.setInt(3, count);
+			rs = pstmt.executeQuery();
+
+			while (rs.next()) {
+				Post post = new Post();
+				post.setId(rs.getInt("id"));
+				post.setTitle(rs.getString("title"));
+				post.setContents(rs.getString("contents"));
+				post.setTime(rs.getTimestamp("time"));
+				post.setHits(rs.getInt("hits"));
+				post.setBoardId(rs.getInt("boardId"));
+				post.setUserId(rs.getString("userId"));
+				list.add(post);
+			}
+		} catch (Exception e) {
+			System.out.println("리스트 생성 실패");
+			e.printStackTrace();
+		}
+		System.out.println(list.size());
+		return list;
+	}
+
+	public Post PostInquiry(int id) {
+		Post post = new Post();
+		
+		try {
+			pstmt = con.prepareStatement("select * from post where id = ?");
+			pstmt.setInt(1, id);
+			rs = pstmt.executeQuery();
+
+			while (rs.next()) {
+				post.setId(rs.getInt("id"));
+				post.setTitle(rs.getString("title"));
+				post.setContents(rs.getString("contents"));
+				post.setTime(rs.getTimestamp("time"));
+				post.setHits(rs.getInt("hits"));
+				post.setBoardId(rs.getInt("boardId"));
+				post.setUserId(rs.getString("userId"));
+			}
+		} catch (Exception e) {
+			System.out.println("게시글 가져오기 실패");
+			e.printStackTrace();
+		}
+		return post;
 	}
 }
