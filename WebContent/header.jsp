@@ -39,7 +39,7 @@
 			<div class="container">
 				<div class="wrapper">
 					<div class="brand">
-						<a href="./Main.jsp"> <img src="images/LogoText.png"
+						<a href="./Main.do"> <img src="images/LogoText.png"
 							alt="해오름이엔지">
 						</a>
 					</div>
@@ -56,13 +56,14 @@
 			<div class="container">
 				<div class="navbarInner">
 					<ul class="navbarUl">
-						<li><a href="./Main.jsp">홈</a></li>
-						<li><a href="./Introduce.jsp">사업 소개</a></li>
-						<li><a href="./Business.jsp">주요 업무</a></li>
+						<li><a href="./Main.do">홈</a></li>
+						<li><a href="./Introduce.do">사업 소개</a></li>
+						<li><a href="./Business.do">주요 업무</a></li>
 						<li><a href="gallery.html">사업 실적</a></li>
 						<li><a href="Counsel.html">고객상담실</a></li>
 						<li>
-							<form id="ntc" action="./NoticeListCommand.do" method="post">
+							<form id="ntc" action="./Notice.do" method="post">
+								<input type="hidden" name="pageNum" value="1">
 								<a href=# onclick="this.parentNode.submit(); return false;">공지사항</a>
 							</form>
 						</li>

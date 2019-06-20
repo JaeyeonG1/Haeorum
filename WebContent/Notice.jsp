@@ -1,6 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
-<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <!DOCTYPE html>
 <html lang="ko">
 <head>
@@ -11,6 +11,12 @@
 <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
+<script type="text/javascript">
+	function page(idx){
+		var pagenum = idx;           
+		location.href="${pageContext.request.contextPath}/Notice.do?pageNum="+pagenum;    
+}
+</script>
 	<%@include file="header.jsp"%>
 	<div class="container">
 		<div class="Content-container102">
@@ -26,8 +32,8 @@
 						<thead>
 							<tr>
 								<th style="text-align: center">번호</th>
-								<th style="text-align: center">제목</th>
 								<th style="text-align: center">작성자</th>
+								<th style="text-align: center">제목</th>
 								<th style="text-align: center">날짜</th>
 								<th style="text-align: center">조회수</th>
 							</tr>
@@ -35,11 +41,11 @@
 						<tbody>
 							<c:forEach var="list" items="${list }">
 								<tr>
-									<td>${list.num }</td>
-									<td>${list.title }</td>
-									<td>${list.userId }</td>
-									<td>${list.time }</td>
-									<td>${list.hits }</td>
+									<td style="width:10%">${list.getId() }</td>
+									<td style="width:10%">${list.getUserId() }</td>
+									<td style="width:50%">${list.getTitle() }</td>
+									<td style="width:20%">${list.getTime() }</td>
+									<td style="width:10%">${list.getHits() }</td>
 								</tr>
 							</c:forEach>
 						</tbody>
@@ -47,7 +53,16 @@
 					<hr>
 					<div class="text-center">
 						<ul class="pagination">
-							<li><a href="#">1</a></li>
+							<c:if test="${page.isPrev() }">
+								<li><a href='javascript:void(0);' onclick="page(${page.getStartPage()-1});">&laquo;</a>
+							</c:if>
+							<c:forEach begin="${page.getStartPage()}"
+								end="${page.getEndPage()}" var="idx">
+								<li><a href='javascript:void(0);' onclick="page(${idx});">${idx }</a></li>
+							</c:forEach>
+							<c:if test="${page.isNext() }">
+								<li><a href='javascript:void(0);' onclick="page(${page.getEndPage()+1});">&raquo;</a>
+							</c:if>
 						</ul>
 					</div>
 					<div class="Make-Button102">

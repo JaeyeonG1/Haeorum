@@ -71,12 +71,14 @@ public class PostDAO {
 		return false;
 	}
 
-	public ArrayList<Post> PostListInquiry() {
+	public ArrayList<Post> PagedPostListInquiry(int start, int count) {
+		ArrayList<Post> list = new ArrayList<Post>();
+		
 		try {
-			pstmt = con.prepareStatement("select * from post order by id desc");
+			pstmt = con.prepareStatement("select * from post order by id desc limit ?,?");
+			pstmt.setInt(1, start);
+			pstmt.setInt(2, count);
 			rs = pstmt.executeQuery();
-
-			ArrayList<Post> list = new ArrayList<Post>();
 
 			while (rs.next()) {
 				Post post = new Post();
@@ -89,12 +91,37 @@ public class PostDAO {
 				post.setUserId(rs.getString("userId"));
 				list.add(post);
 			}
-			
-			return list;
 		} catch (Exception e) {
 			System.out.println("리스트 생성 실패");
 			e.printStackTrace();
 		}
-		return null;
+		System.out.println(list.size());
+		return list;
+	}
+	
+	public ArrayList<Post> AllPostListInquiry() {
+		ArrayList<Post> list = new ArrayList<Post>();
+		
+		try {
+			pstmt = con.prepareStatement("select * from post order by id desc");
+			rs = pstmt.executeQuery();
+
+			while (rs.next()) {
+				Post post = new Post();
+				post.setId(rs.getInt("id"));
+				post.setTitle(rs.getString("title"));
+				post.setContents(rs.getString("contents"));
+				post.setTime(rs.getTimestamp("time"));
+				post.setHits(rs.getInt("hits"));
+				post.setBoardId(rs.getInt("boardId"));
+				post.setUserId(rs.getString("userId"));
+				list.add(post);
+			}
+		} catch (Exception e) {
+			System.out.println("리스트 생성 실패");
+			e.printStackTrace();
+		}
+		System.out.println(list.size());
+		return list;
 	}
 }

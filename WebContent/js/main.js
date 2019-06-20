@@ -1,5 +1,3 @@
-//test
-
 // 메인 화면 슬라이드 쇼
 let sliderWrapper = document.getElementById(`sliderWrapper`);
 let sliderIndex = 0;
@@ -73,3 +71,9 @@ function pagination() {
 }
 
 pagination();
+
+// 게시판 페이징 함수
+function page(idx){
+    var pagenum = idx;           
+    location.href="${pageContext.request.contextPath}/Notice.do?pageNum="+pagenum;    
+}

@@ -34,7 +34,7 @@ public class PostRegisterCommand implements Command {
 		try {
 			multi = new MultipartRequest(request, path, sizeLimit, "utf-8", new DefaultFileRenamePolicy());
 
-			ArrayList<Post> list = dao.PostListInquiry();
+			ArrayList<Post> list = dao.AllPostListInquiry();
 			int num = 0;
 			if (list.size() == 0) {
 			} else {
@@ -67,7 +67,7 @@ public class PostRegisterCommand implements Command {
 			System.out.println("글 등록 성공");
 
 			forward.setRedirect(true);
-			forward.setPath("./Notice.do");
+			forward.setPath("./NoticeListCommand.do");
 			return forward;
 
 		} catch (Exception ex) {
